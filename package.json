@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MegaRoks/WeatherApp/issues"
   },
-  "homepage": "https://github.com/MegaRoks/WeatherApp#readme"
+  "homepage": "https://github.com/MegaRoks/WeatherApp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
