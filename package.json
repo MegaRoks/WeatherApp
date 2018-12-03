@@ -1,0 +1,22 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather applications with the help of the apixu.com weather service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MegaRoks/WeatherApp.git"
+  },
+  "keywords": [
+    "Weather"
+  ],
+  "author": "MegaRoks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MegaRoks/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/MegaRoks/WeatherApp#readme"
+}
