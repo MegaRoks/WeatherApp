@@ -19,14 +19,17 @@ app.post("/", function(req, res) {
 
   request(url, function(err, response, body) {
     if (err) {
-      res.render("index", { location: null, error: "Error, please try again1" });
+      res.render("index", { location: null, error: "Error, please try again" });
     } else {
-      let location = JSON.parse(body);
-      if (location == undefined) {
-        res.render("index", { location: null, error: "Error, please try again2"});
+      let { location } = JSON.parse(body);
+      let { current } = JSON.parse(body);
+      if (location.name == undefined) {
+        res.render("index", {
+          location: null,
+          error: "Error, please try again"
+        });
       } else {
-        console.log(location.name);
-        let locationText = `It's ${location.name} degrees in ${location.name}!`;
+        let locationText = `In ${location.name} ${current.temp_c} degrees!`;
         res.render("index", { location: locationText, error: null });
       }
     }
